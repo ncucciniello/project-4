@@ -18,31 +18,16 @@ nav {
   text-align: center;
 }
 
-.post-button {
-  background-color: rgba(128,128,128,.5);
-  width: 255px;
-  height: 35px;
-  border: 1px solid rgba(128,128,128,.9);
-  border-radius: 1px;
-  margin: 0 auto 10px auto;
-  text-align: center;
-  line-height: 35px;
-}
-
-.post-button:hover {
-  cursor: pointer;
-  background-color: rgba(128,128,128,.3);
-  color: rgba(0,0,0,.7);
-}
-
 .city-input {
   display: inline-block;
   width: 195px;
   height: 35px;
+  margin-bottom: 20px;
 }
 
 .search-button {
-  background-color: rgba(128,128,128,.5);
+  /*background-color: rgba(128,128,128,.5);*/
+  background-color: buttonface;
   width: 60px;
   height: 35px;
   border: 1px solid rgba(128,128,128,.9);
@@ -51,6 +36,24 @@ nav {
 }
 
 .search-button:hover {
+  cursor: pointer;
+  background-color: rgba(128,128,128,.3);
+  color: rgba(0,0,0,.7);
+}
+
+.post-button {
+  /*background-color: rgba(128,128,128,.5);*/
+  background-color: buttonface;
+  width: 255px;
+  height: 35px;
+  border: 1px solid rgba(128,128,128,.9);
+  border-radius: 1px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  line-height: 35px;
+}
+
+.post-button:hover {
   cursor: pointer;
   background-color: rgba(128,128,128,.3);
   color: rgba(0,0,0,.7);

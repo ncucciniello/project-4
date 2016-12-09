@@ -12,9 +12,9 @@ class PostModal extends Component {
             onClick={()=>{document.querySelector('.modal').style.display = "none"}}
           >×
           </span>
-          <input id="artist-input" type="text" placeholder="Artist" />
-          <input id="img-input" type="text" placeholder="Image URL" />
-          <input id="location-input" type="text" placeholder="Location" />
+          <input className="input-form" id="artist-input" type="text" placeholder="Artist" />
+          <input className="input-form" id="img-input" type="text" placeholder="Image URL" />
+          <input className="input-form" id="location-input" type="text" placeholder="Location" />
           <textarea id="info-input" type="text" placeholder="Info on the art" />
           <button className="submit-button">Submit your find</button>
 
