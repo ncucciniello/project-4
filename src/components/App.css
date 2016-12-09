@@ -1,14 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  background-color: #393939;
   padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-  color: #FAFAFA;
   margin: 0;
   font-family: sans-serif;
 }
 
-#description-body {
-  padding: 20px;
+nav {
+  text-align: center;
+}
+
+.post-button {
+  background-color: rgba(128,128,128,.5);
+  width: 255px;
+  height: 35px;
+  border: 1px solid rgba(128,128,128,.9);
+  border-radius: 1px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  line-height: 35px;
+}
+
+.post-button:hover {
+  cursor: pointer;
+  background-color: rgba(128,128,128,.3);
+  color: rgba(0,0,0,.7);
+}
+
+.city-input {
+  display: inline-block;
+  width: 195px;
+  height: 35px;
+}
+
+.search-button {
+  background-color: rgba(128,128,128,.5);
+  width: 60px;
+  height: 35px;
+  border: 1px solid rgba(128,128,128,.9);
+  border-radius: 1px;
+  text-align: center;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: rgba(128,128,128,.3);
+  color: rgba(0,0,0,.7);
+}
+
+.dummy-map {
+  background-color: #BFBFBF;
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
 }

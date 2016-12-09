@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import './normalize.css';
 import style from './App.css';
+import PostModal from './PostModal/PostModal.jsx';
 
 // create a React Component called _App_
 class App extends Component {
@@ -10,14 +11,21 @@ class App extends Component {
     return (
       <div id="app-container">
         <header>
-          <h1>Welcome to PERN Template</h1>
+          <h1>THIS IS MY DOPE APP</h1>
         </header>
-        <div id={style['description-body']}>
-          <p>
-            Welcome to PERN Template. This is a temporary Hello World component 
-            that may be replaced with the rest of your React client application
-          </p>
+        <nav>
+          <div
+            className="post-button"
+            onClick={()=>{document.querySelector('.modal').style.display = "block"}}
+          >Add your findings</div>
+          <input className= "city-input" type="text" placeholder="Check another city" />
+          <button className="search-button">Submit</button>
+        </nav>
+        <PostModal />
+
+        <div className="dummy-map">
         </div>
+
       </div>
     );
   }
