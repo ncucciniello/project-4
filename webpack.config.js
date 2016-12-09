@@ -25,7 +25,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'ReactJS Hello World',
       xhtml: true,
-      inject: false,
+      inject: true,
+      scripts: ['https://maps.googleapis.com/maps/api/js?key=AIzaSyDoOddOegO5eyxsahWPiGxSrlC7X-p4PgI&callback=initMap'],
       template: require('html-webpack-template'),
       appMountId: 'root-container'
     }),
