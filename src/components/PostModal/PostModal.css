@@ -1,0 +1,64 @@
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, .3);
+}
+
+.modal-content {
+  margin: 70px auto 0 auto;
+  background-color: #FFFFFF;
+  width: 500px;
+  height: 550px;
+  border: 1px solid #9C9C9C;
+  border-radius: 5px;
+  /*box-shadow: 5px 4px 10px #888888;*/
+}
+
+.close {
+    position: relative;
+    left: 475px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #206FF9;
+    cursor: pointer;
+}
+
+#artist-input {
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 300px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #BFBFBF;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  padding: 20px 40px;
+  margin: 0 auto 20px auto;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  border: 1px solid #BFBFBF;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 35px;
+}
