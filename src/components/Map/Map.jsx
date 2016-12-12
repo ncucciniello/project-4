@@ -4,18 +4,20 @@ import style from './Map.css';
 
 class MyMap extends Component {
   render(){
+    const mapContainer = <div className="mapContainer"></div>
 
-    // const mapContainer = <div className="mapContainer"></div>
-    // const markers = this.props.markers.map((marker, i) => {
-    //   const marker = {
-    //     position: {
-    //       lat: marker.location.lat
-    //       lng: marker.location.lnf
-    //     }
-    //   }
+    const markers = this.props.markers.map((art, i) => {
+      const marker = {
+        position: {
+          lat: art.location.lat,
+          lng: art.location.lng
+        }
+      }
 
-    //   return <Marker key={marker.id} {..marker} />
-    // })
+      return <Marker
+                key={i} {...marker}
+             />
+    })
 
     return (
       // <div>map component works</div>
@@ -26,6 +28,7 @@ class MyMap extends Component {
             defaultZoom={15}
             defaultCenter={this.props.center}
             options={{streetViewControl: false, myTypeControl: false}}>
+            { markers }
           </GoogleMap>
         } />
     );

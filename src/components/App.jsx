@@ -14,14 +14,14 @@ class App extends Component {
       lng: -73.9884469
     }
 
-    // const markers = [
-    //   {
-    //     location: {
-    //       lat: 40.7575285,
-    //       lng: -73.9884469
-    //     }
-    //   }
-    // ]
+    const markers = [
+      {
+        location: {
+          lat: 40.7575285,
+          lng: -73.9884469
+        }
+      }
+    ]
 
     return (
       <div id="app-container">
