@@ -13,6 +13,7 @@ CREATE TABLE art(
   post_id SERIAL NOT NULL,
   artist TEXT,
   img_url TEXT,
+  address TEXT NOT NULL,
   lat DECIMAL(9,6) NOT NULL,
   lng DECIMAL(9,6) NOT NULL,
   info TEXT

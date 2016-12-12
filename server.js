@@ -10,4 +10,6 @@ app.use(logger('dev'));
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
+app.use('/api', require('./routes/dbAPI.js'))
+
 app.listen(PORT, () => console.log('server here! listening on', PORT));
