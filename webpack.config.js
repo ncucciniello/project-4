@@ -26,7 +26,7 @@ module.exports = {
       title: 'ReactJS Hello World',
       xhtml: true,
       inject: true,
-      scripts: ['https://maps.googleapis.com/maps/api/js?key=AIzaSyDoOddOegO5eyxsahWPiGxSrlC7X-p4PgI&callback=initMap'],
+      scripts: ['https://maps.googleapis.com/maps/api/js?key=AIzaSyDoOddOegO5eyxsahWPiGxSrlC7X-p4PgI'],
       template: require('html-webpack-template'),
       appMountId: 'root-container'
     }),

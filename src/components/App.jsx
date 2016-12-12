@@ -3,12 +3,26 @@ import React, { Component } from 'react';
 import './normalize.css';
 import style from './App.css';
 import PostModal from './PostModal/PostModal.jsx';
-// import Map from './Map/Map.jsx';
+import MyMap from './Map/Map.jsx';
 
 // create a React Component called _App_
 class App extends Component {
 
   render(){
+    const location = {
+      lat: 40.7575285,
+      lng: -73.9884469
+    }
+
+    // const markers = [
+    //   {
+    //     location: {
+    //       lat: 40.7575285,
+    //       lng: -73.9884469
+    //     }
+    //   }
+    // ]
+
     return (
       <div id="app-container">
         <header>
@@ -24,8 +38,15 @@ class App extends Component {
         </nav>
         <PostModal />
 
-        <div className="dummy-map">
+        <div className="map-div">
+          <MyMap
+            center = {location}
+            markers = {markers}
+          />
         </div>
+
+        {/*<div className="dummy-map">
+        </div>*/}
 
       </div>
     );

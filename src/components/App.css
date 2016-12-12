@@ -60,9 +60,10 @@ nav {
 }
 
 .map-div {
-  width: 600;
-  height: 300;
+  width: 1000px;
+  height: 450px;
   background-color: red;
+  margin: 0 auto;
 }
 
 .dummy-map {
