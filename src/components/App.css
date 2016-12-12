@@ -59,6 +59,12 @@ nav {
   color: rgba(0,0,0,.7);
 }
 
+.map-div {
+  width: 600;
+  height: 300;
+  background-color: red;
+}
+
 .dummy-map {
   background-color: #BFBFBF;
   width: 1000px;

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './normalize.css';
 import style from './App.css';
 import PostModal from './PostModal/PostModal.jsx';
-// import MyMap from './MapContainer/MapContainer.jsx';
+// import Map from './Map/Map.jsx';
 
 // create a React Component called _App_
 class App extends Component {
@@ -23,8 +23,6 @@ class App extends Component {
           </div>
         </nav>
         <PostModal />
-
-        {/* <Map /> */}
 
         <div className="dummy-map">
         </div>
