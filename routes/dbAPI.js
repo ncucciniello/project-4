@@ -9,6 +9,7 @@ router.get('/', getMarkerInfo, (req, res) => {
 
 // insert new art location and info to the art db table
 router.post('/', saveNewLocation, (req, res) => {
+  console.log('Hit post route')
   res.json(res.results);
 });
 

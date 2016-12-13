@@ -11,14 +11,36 @@ class App extends Component {
     super();
     this.state = {
       artPins: [],
-      newLocation: []
+      newLocation: [],
+      myLat: '',
+      myLng: '',
+      formArtist: '',
+      formImgURL: '',
+      formAddress: '',
+      formLat: '',
+      formLng: '',
+      formInfo: ''
     };
+  }
+
+  componentWillMount() {
+    this.getGeoLocation();
+    this.getLocations();
   }
 
   componentDidMount() {
     this.getLocations();
   }
 
+  getGeoLocation() {
+    navigator.geolocation.getCurrentPosition((position) => {
+      this.setState({
+        myLat: position.coords.latitude,
+        myLng: position.coords.longitude
+      })
+      // console.log(this.state.myLat, this.state.myLng)
+    });
+  }
 
   getLocations() {
     fetch('/locations')
@@ -33,45 +55,84 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
+  updateArtist(e) {
+    this.setState({
+      formArtist: e.target.value,
+    });
+  }
 
-  // saveLocation(formInfo) {
-  //   console.log('add to db', formInfo);
-  //   fetch('/location', {
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     method: 'post',
-  //     body: JSON.stringify(formInfo),
-  //   })
-  //   .then(this.getLocations())
-  //   .catch(err => console.log('addToPlaylist error', err));
-  // }
+  updateImgURL(e) {
+    this.setState({
+      formImgURL: e.target.value,
+    });
+  }
 
-  // formHandler() {
-  //   console.log('form');
-  //   const formData = {
-  //     artist: ,
-  //     img_url: ,
-  //     address: ,
-  //     lat: ,
-  //     lng: ,
-  //     info:
-  //   };
-  //   this.saveLocation(formData);
-  // }
+  updateAddress(e) {
+    this.setState({
+      formAddress: e.target.value,
+    });
+  }
+
+  updateLat(e) {
+    this.setState({
+      formLat: e.target.value,
+    });
+  }
+
+  updateLng(e) {
+    this.setState({
+      formLng: e.target.value,
+    });
+  }
+
+  updateInfo(e) {
+    this.setState({
+      formInfo: e.target.value,
+    });
+  }
+
+  handleFormSubmit() {
+    console.log(this.state.formArtist)
+    console.log(this.state.formImgURL)
+    console.log(this.state.formAddress)
+    console.log(this.state.formLat)
+    console.log(this.state.formLng)
+    console.log(this.state.formInfo)
+
+    fetch('/locations', {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify({
+        artist: this.state.formArtist,
+        img_url: this.state.formImgURL,
+        address: this.state.formAddress,
+        lat: this.state.formLat,
+        lng: this.state.formLng,
+        info: this.state.formInfo
+      })
+    })
+    .then(this.setState({
+      formArtist: '',
+      formImgURL: '',
+      formAddress: '',
+      formLat: '',
+      formLng: '',
+      formInfo: ''
+    }))
+    .then(this.getLocations())
+    .catch(err => console.log(err));
+  }
 
   render(){
-    const location = {
-      lat: 40.7575285,
-      lng: -73.9884469
-    }
-
-    const markers = [
+    const location =
       {
-        lat: 40.7575285,
-        lng: -73.9884469
+        lat: 40.740066299999995,
+        lng: -73.98968219999999
+        // lat: parseFloat(this.state.myLat),
+        // lng: parseFloat(this.state.myLng)
       }
-    ]
 
     return (
       <div id="app-container">
@@ -86,12 +147,25 @@ class App extends Component {
             Add your findings
           </div>
         </nav>
-        <PostModal />
+        <PostModal
+          formArtist={this.state.formArtist}
+          updateArtist={event => this.updateArtist(event)}
+          formImgURL={this.state.formImgURL}
+          updateImgURL={event => this.updateImgURL(event)}
+          formAddress={this.state.formAddress}
+          updateAddress={event => this.updateAddress(event)}
+          formLat={this.state.formLat}
+          updateLat={event => this.updateLat(event)}
+          formLng={this.state.formLng}
+          updateLng={event => this.updateLng(event)}
+          formInfo={this.state.formInfo}
+          updateInfo={event => this.updateInfo(event)}
+          handleFormSubmit={() => this.handleFormSubmit()}
+        />
 
         <div className="map-div">
           <MyMap
             center = {location}
-            markers = { markers }
             markers = {this.state.artPins}
           />
         </div>
