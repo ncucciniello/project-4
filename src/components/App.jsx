@@ -28,9 +28,9 @@ class App extends Component {
     this.getLocations();
   }
 
-  componentDidMount() {
-    this.getLocations();
-  }
+  // componentDidMount() {
+  //   this.getLocations();
+  // }
 
   getGeoLocation() {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -128,8 +128,8 @@ class App extends Component {
   render(){
     const location =
       {
-        lat: 40.740066299999995,
-        lng: -73.98968219999999
+        lat: 40.740066,
+        lng: -73.989682
         // lat: parseFloat(this.state.myLat),
         // lng: parseFloat(this.state.myLng)
       }

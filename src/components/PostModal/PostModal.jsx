@@ -68,7 +68,12 @@ class PostModal extends Component {
           />
           <button
             className="submit-button"
-            onClick={this.props.handleFormSubmit}
+            onClick={
+              ()=>{
+                this.props.handleFormSubmit(),
+                document.querySelector('.modal').style.display = "none"
+              }
+            }
           >Submit your find</button>
 
         </div>

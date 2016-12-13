@@ -57,8 +57,17 @@ textarea {
 }
 
 .submit-button {
+  background-color: rgba(128,128,128,.5);
   display: block;
   margin: 0 auto;
   width: 300px;
   height: 35px;
+  border: 1px solid rgba(128,128,128,.9);
+  border-radius: 1px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgba(128,128,128,.3);
+  color: rgba(0,0,0,.7);
 }
