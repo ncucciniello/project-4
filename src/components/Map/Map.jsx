@@ -9,8 +9,8 @@ class MyMap extends Component {
     const markers = this.props.markers.map((art, i) => {
       const marker = {
         position: {
-          lat: art.location.lat,
-          lng: art.location.lng
+          lat: parseFloat(art.lat),
+          lng: parseFloat(art.lng)
         }
       }
 

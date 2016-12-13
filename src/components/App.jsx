@@ -7,6 +7,58 @@ import MyMap from './Map/Map.jsx';
 
 // create a React Component called _App_
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      artPins: [],
+      newLocation: []
+    };
+  }
+
+  componentDidMount() {
+    this.getLocations();
+  }
+
+
+  getLocations() {
+    fetch('/locations')
+    .then(r => r.json())
+    .then((locations) => {
+      // console.log(locations)
+      this.setState({
+        artPins: locations
+      });
+      console.log(this.state.artPins);
+    })
+    .catch(err => console.log(err));
+  }
+
+
+  // saveLocation(formInfo) {
+  //   console.log('add to db', formInfo);
+  //   fetch('/location', {
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     method: 'post',
+  //     body: JSON.stringify(formInfo),
+  //   })
+  //   .then(this.getLocations())
+  //   .catch(err => console.log('addToPlaylist error', err));
+  // }
+
+  // formHandler() {
+  //   console.log('form');
+  //   const formData = {
+  //     artist: ,
+  //     img_url: ,
+  //     address: ,
+  //     lat: ,
+  //     lng: ,
+  //     info:
+  //   };
+  //   this.saveLocation(formData);
+  // }
 
   render(){
     const location = {
@@ -16,17 +68,15 @@ class App extends Component {
 
     const markers = [
       {
-        location: {
-          lat: 40.7575285,
-          lng: -73.9884469
-        }
+        lat: 40.7575285,
+        lng: -73.9884469
       }
     ]
 
     return (
       <div id="app-container">
         <header>
-          <h1>THIS IS MY DOPE APP</h1>
+          <h1>Street Art Locations</h1>
         </header>
         <nav>
           <input className= "city-input" type="text" placeholder="Check another city" />
@@ -41,12 +91,10 @@ class App extends Component {
         <div className="map-div">
           <MyMap
             center = {location}
-            markers = {markers}
+            markers = { markers }
+            markers = {this.state.artPins}
           />
         </div>
-
-        {/*<div className="dummy-map">
-        </div>*/}
 
       </div>
     );

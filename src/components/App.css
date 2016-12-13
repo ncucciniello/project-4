@@ -62,13 +62,6 @@ nav {
 .map-div {
   width: 1000px;
   height: 450px;
-  background-color: red;
-  margin: 0 auto;
-}
-
-.dummy-map {
   background-color: #BFBFBF;
-  width: 1000px;
-  height: 450px;
   margin: 0 auto;
 }
