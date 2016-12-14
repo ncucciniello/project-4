@@ -16,7 +16,7 @@ class MyMap extends Component {
 
       return <Marker
                 key={i} {...marker}
-                onClick={()=>{document.querySelector('.modal').style.display = "block"}}
+                onClick={()=>{document.querySelector('.info-modal').style.display = "block"}}
              />
     })
 

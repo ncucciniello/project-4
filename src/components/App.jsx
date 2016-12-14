@@ -5,6 +5,7 @@ import style from './App.css';
 import LogIn from './LogIn/LogIn.jsx'
 import PostModal from './PostModal/PostModal.jsx';
 import MyMap from './Map/Map.jsx';
+import InfoModal from './InfoModal/InfoModal.jsx';
 
 // create a React Component called _App_
 class App extends Component {
@@ -142,9 +143,14 @@ class App extends Component {
         </header>
         <nav>
           <input className= "city-input" type="text" placeholder="Check another city" />
-          <button className="search-button">Search</button>
-          <div className="post-button"
-               onClick={()=>{document.querySelector('.modal').style.display = "block"}}>
+          <button
+            className="search-button"
+            onClick={()=>{document.querySelector('.login-page').style.display = "block"}}>
+            Search
+          </button>
+          <div
+            className="post-button"
+            onClick={()=>{document.querySelector('.modal').style.display = "block"}}>
             Add your findings
           </div>
         </nav>
@@ -171,7 +177,10 @@ class App extends Component {
           />
         </div>
 
+        <InfoModal />
+
         <LogIn />
+
 
       </div>
     );
