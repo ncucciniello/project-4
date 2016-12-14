@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import './normalize.css';
 import style from './App.css';
+import LogIn from './LogIn/LogIn.jsx'
 import PostModal from './PostModal/PostModal.jsx';
 import MyMap from './Map/Map.jsx';
 
@@ -169,6 +170,8 @@ class App extends Component {
             markers = {this.state.artPins}
           />
         </div>
+
+        <LogIn />
 
       </div>
     );
