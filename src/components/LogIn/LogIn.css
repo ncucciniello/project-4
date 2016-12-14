@@ -7,78 +7,343 @@
   left: 0;
   top: 0;
   z-index: 0;
+  overflow: hidden;
 }
 
 .img-box {
   position: absolute;
   background-image: url('http://streetartnyc.org/wp-content/uploads/2016/10/nychos-mural-art-jersey-city.jpg');
-  opacity: 0.8;
+  opacity: 0.7;
   background-size: 210px 210px;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: -50px;
+  margin-left: -5px;
   height: 210px;
   width: 210px;
   z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .img-box2 {
   position: absolute;
   background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
-  opacity: 0.8;
+  opacity: 0.7;
   background-size: 210px 210px;
-  top: 5px;
-  left: 220px;
+  top: -50px;
+  left: 210px;
   height: 210px;
   width: 210px;
   z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .img-box3 {
   position: absolute;
-  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
-  opacity: 0.8;
+  background-image: url('http://www.thisiscolossal.com/wp-content/uploads/2016/02/smug-1.jpg');
+  opacity: 0.7;
   background-size: 210px 210px;
-  top: 5px;
-  left: 435px;
+  top: -50px;
+  left: 425px;
   height: 210px;
   width: 210px;
   z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .img-box4 {
   position: absolute;
-  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
-  opacity: 0.8;
+  background-image: url('http://dunedinstreetart.com/wp-content/uploads/2014/09/DALeast-Defoliation-DunedinNew-Zealand.-2014jj.jpg');
+  opacity: 0.7;
   background-size: 210px 210px;
-  top: 5px;
-  left: 650px;
+  top: -50px;
+  left: 640px;
   height: 210px;
   width: 210px;
   z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .img-box5 {
   position: absolute;
-  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
-  opacity: 0.8;
+  background-image: url('http://infinitelegroom.com/wp-content/uploads/2013/02/street-art-invader-2.jpg');
+  opacity: 0.7;
   background-size: 210px 210px;
-  top: 5px;
-  left: 865px;
+  top: -50px;
+  left: 855px;
   height: 210px;
   width: 210px;
   z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .img-box6 {
   position: absolute;
-  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
-  opacity: 0.8;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/cd/9d/04/cd9d0457150e55722af9746072aaa55b.jpg');
+  opacity: 0.7;
   background-size: 210px 210px;
-  top: 5px;
-  left: 1080px;
+  top: -50px;
+  left: 1070px;
   height: 210px;
   width: 210px;
   z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box7 {
+  position: absolute;
+  background-image: url('http://streetartnyc.org/wp-content/uploads/2016/10/nychos-mural-art-jersey-city.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  margin-top: 165px;
+  margin-left: -5px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box8 {
+  position: absolute;
+  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 165px;
+  left: 210px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box9 {
+  position: absolute;
+  background-image: url('http://www.thisiscolossal.com/wp-content/uploads/2016/02/smug-1.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 165px;
+  left: 425px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box10 {
+  position: absolute;
+  background-image: url('http://dunedinstreetart.com/wp-content/uploads/2014/09/DALeast-Defoliation-DunedinNew-Zealand.-2014jj.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 165px;
+  left: 640px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box11 {
+  position: absolute;
+  background-image: url('http://infinitelegroom.com/wp-content/uploads/2013/02/street-art-invader-2.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 165px;
+  left: 855px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box12 {
+  position: absolute;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/cd/9d/04/cd9d0457150e55722af9746072aaa55b.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 165px;
+  left: 1070px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box13 {
+  position: absolute;
+  background-image: url('http://streetartnyc.org/wp-content/uploads/2016/10/nychos-mural-art-jersey-city.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  margin-top: 380px;
+  margin-left: -5px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box14 {
+  position: absolute;
+  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 380px;
+  left: 210px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box15 {
+  position: absolute;
+  background-image: url('http://www.thisiscolossal.com/wp-content/uploads/2016/02/smug-1.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 380px;
+  left: 425px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box16 {
+  position: absolute;
+  background-image: url('http://dunedinstreetart.com/wp-content/uploads/2014/09/DALeast-Defoliation-DunedinNew-Zealand.-2014jj.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 380px;
+  left: 640px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box17 {
+  position: absolute;
+  background-image: url('http://infinitelegroom.com/wp-content/uploads/2013/02/street-art-invader-2.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 380px;
+  left: 855px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box18 {
+  position: absolute;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/cd/9d/04/cd9d0457150e55722af9746072aaa55b.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 380px;
+  left: 1070px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box19 {
+  position: absolute;
+  background-image: url('http://streetartnyc.org/wp-content/uploads/2016/10/nychos-mural-art-jersey-city.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  margin-top: 595px;
+  margin-left: -5px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box20 {
+  position: absolute;
+  background-image: url('https://bizarrebeyondbelief.files.wordpress.com/2016/10/unnamed.jpg?w=662&h=544');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 595px;
+  left: 210px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box21 {
+  position: absolute;
+  background-image: url('http://www.thisiscolossal.com/wp-content/uploads/2016/02/smug-1.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 595px;
+  left: 425px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box22 {
+  position: absolute;
+  background-image: url('http://dunedinstreetart.com/wp-content/uploads/2014/09/DALeast-Defoliation-DunedinNew-Zealand.-2014jj.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 595px;
+  left: 640px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box23 {
+  position: absolute;
+  background-image: url('http://infinitelegroom.com/wp-content/uploads/2013/02/street-art-invader-2.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 595px;
+  left: 855px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.img-box24 {
+  position: absolute;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/cd/9d/04/cd9d0457150e55722af9746072aaa55b.jpg');
+  opacity: 0.7;
+  background-size: 210px 210px;
+  top: 595px;
+  left: 1070px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .login-form {

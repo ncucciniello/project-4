@@ -44,6 +44,27 @@ class LogIn extends Component {
         <div className="img-box5"></div>
         <div className="img-box6"></div>
 
+        <div className="img-box7"></div>
+        <div className="img-box8"></div>
+        <div className="img-box9"></div>
+        <div className="img-box10"></div>
+        <div className="img-box11"></div>
+        <div className="img-box12"></div>
+
+        <div className="img-box13"></div>
+        <div className="img-box14"></div>
+        <div className="img-box15"></div>
+        <div className="img-box16"></div>
+        <div className="img-box17"></div>
+        <div className="img-box18"></div>
+
+        <div className="img-box19"></div>
+        <div className="img-box20"></div>
+        <div className="img-box21"></div>
+        <div className="img-box22"></div>
+        <div className="img-box23"></div>
+        <div className="img-box24"></div>
+
         <div className="login-form">
           <h1>Street Art</h1>
           <input
