@@ -16,7 +16,11 @@ class MyMap extends Component {
 
       return <Marker
                 key={i} {...marker}
-                onClick={()=>{document.querySelector('.info-modal').style.display = "block"}}
+                onClick={
+                  ()=>{console.log('marker clicked'), this.props.updateSelectedMarker(art)}
+                  // () =>{console.log(art)}
+                  // ()=>{document.querySelector('.info-modal').style.display = "block"}
+                }
              />
     })
 

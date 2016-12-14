@@ -21,7 +21,11 @@ class App extends Component {
       formAddress: '',
       formLat: '',
       formLng: '',
-      formInfo: ''
+      formInfo: '',
+      selectedArtist: '',
+      selectedImg: '',
+      selectedAddress: '',
+      selectedInfo: ''
     };
   }
 
@@ -127,11 +131,27 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
+  updateSelectedMarker(e) {
+    this.setState({
+      selectedArtist: e.artist,
+      selectedImg: e.img_url,
+      selectedAddress: e.address,
+      selectedInfo: e.info
+    });
+    console.log('new selection info', this.state.selectedArtist, this.state.selectedAddress)
+  }
+
+
+
   render(){
     const location =
       {
-        lat: 40.740066,
-        lng: -73.989682
+        lat: 40.731410,
+        lng: -74.047910
+        // // GA as center
+        // lat: 40.740066,
+        // lng: -73.989682
+        // // geoLocation as center
         // lat: parseFloat(this.state.myLat),
         // lng: parseFloat(this.state.myLng)
       }
@@ -142,12 +162,12 @@ class App extends Component {
           <h1>Street Art Locations</h1>
         </header>
         <nav>
-          <input className= "city-input" type="text" placeholder="Check another city" />
+          {/*<input className= "city-input" type="text" placeholder="Check another city" />
           <button
             className="search-button"
             onClick={()=>{document.querySelector('.login-page').style.display = "block"}}>
             Search
-          </button>
+          </button>*/}
           <div
             className="post-button"
             onClick={()=>{document.querySelector('.modal').style.display = "block"}}>
@@ -174,6 +194,7 @@ class App extends Component {
           <MyMap
             center = {location}
             markers = {this.state.artPins}
+            updateSelectedMarker = {event => this.updateSelectedMarker(event)}
           />
         </div>
 
