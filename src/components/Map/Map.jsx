@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
+import { GoogleMapLoader, GoogleMap, Marker } from 'react-google-maps';
 import style from './Map.css';
 
 class MyMap extends Component {
@@ -17,7 +17,7 @@ class MyMap extends Component {
       return <Marker
                 key={i} {...marker}
                 onClick={
-                  ()=>{console.log('marker clicked'), this.props.updateSelectedMarker(art)}
+                  ()=>{this.props.updateSelectedMarker(art), document.querySelector('.info-modal').style.display = "block"}
                   // () =>{console.log(art)}
                   // ()=>{document.querySelector('.info-modal').style.display = "block"}
                 }
@@ -25,7 +25,6 @@ class MyMap extends Component {
     })
 
     return (
-      // <div>map component works</div>
        <GoogleMapLoader
         containerElement = { mapContainer }
         googleMapElement = {

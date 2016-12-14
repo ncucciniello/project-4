@@ -44,7 +44,7 @@ class App extends Component {
         myLat: position.coords.latitude,
         myLng: position.coords.longitude
       })
-      // console.log(this.state.myLat, this.state.myLng)
+      console.log(this.state.myLat, this.state.myLng)
     });
   }
 
@@ -98,12 +98,13 @@ class App extends Component {
   }
 
   handleFormSubmit() {
-    console.log(this.state.formArtist)
-    console.log(this.state.formImgURL)
-    console.log(this.state.formAddress)
-    console.log(this.state.formLat)
-    console.log(this.state.formLng)
-    console.log(this.state.formInfo)
+    // console.log(this.state.formArtist,
+    //             this.state.formImgURL,
+    //             this.state.formImgURL,
+    //             this.state.formAddress,
+    //             this.state.formLat,
+    //             this.state.formLng,
+    //             this.state.formInfo)
 
     fetch('/locations', {
       headers: {
@@ -198,14 +199,17 @@ class App extends Component {
           />
         </div>
 
-        <InfoModal />
+        <InfoModal
+          selectedArtist={this.state.selectedArtist}
+          selectedImg={this.state.selectedImg}
+          selectedAddress={this.state.selectedAddress}
+          selectedInfo={this.state.selectedInfo}
+        />
 
         <LogIn />
-
 
       </div>
     );
   }
 }
-
-export default App;
+export default App
