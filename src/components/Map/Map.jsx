@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GoogleMapLoader, GoogleMap, Marker } from 'react-google-maps';
+import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import style from './Map.css';
 
 class MyMap extends Component {
@@ -16,6 +16,7 @@ class MyMap extends Component {
 
       return <Marker
                 key={i} {...marker}
+                onClick={()=>{document.querySelector('.modal').style.display = "block"}}
              />
     })
 
