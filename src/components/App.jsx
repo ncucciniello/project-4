@@ -147,11 +147,11 @@ class App extends Component {
   render(){
     const location =
       {
-        lat: 40.731410,
-        lng: -74.047910
-        // // GA as center
-        // lat: 40.740066,
-        // lng: -73.989682
+        // lat: 40.731410,
+        // lng: -74.047910
+        // GA as center
+        lat: 40.740066,
+        lng: -73.989682
         // // geoLocation as center
         // lat: parseFloat(this.state.myLat),
         // lng: parseFloat(this.state.myLng)
@@ -161,6 +161,11 @@ class App extends Component {
       <div id="app-container">
         <header>
           <h1>Street Art Locations</h1>
+          <div
+            className="log-out"
+            onClick={()=>{document.querySelector('.login-page').style.display = "block"}}>
+            Log Out
+          </div>
         </header>
         <nav>
           {/*<input className= "city-input" type="text" placeholder="Check another city" />

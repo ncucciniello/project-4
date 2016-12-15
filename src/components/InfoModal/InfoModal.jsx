@@ -22,7 +22,8 @@ class InfoModal extends Component {
               </span>
               <h2>{this.props.selectedArtist}</h2>
               <h3>{this.props.selectedAddress}</h3>
-              <h6>{this.props.selectedInfo}</h6>
+              <p className='info-tag'>{this.props.selectedInfo}</p>
+              <div className="like-button"></div>
             </div>
 
           </div>

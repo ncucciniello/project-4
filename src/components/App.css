@@ -14,6 +14,27 @@
   height: 100vh;
 }
 
+.log-out {
+  position: relative;
+  float: right;
+  background-color: rgb(128,128,128);
+  /*background-color: buttonface;*/
+  width: 85px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 1px;
+  top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.log-out:hover {
+  cursor: pointer;
+  background-color: #C0C0C0;
+  color: rgba(0,0,0,.7);
+}
+
 header {
   padding: 20px;
   margin-bottom: 20px;
@@ -61,7 +82,7 @@ nav {
   /*background-color: buttonface;*/
   width: 255px;
   height: 35px;
-  border: 1px solid rgba(128,128,128,.9);
+  border: 1px solid black;
   border-radius: 1px;
   margin: 0 auto 55px auto;
   text-align: center;
@@ -70,7 +91,7 @@ nav {
 
 .post-button:hover {
   cursor: pointer;
-  /*background-color: rgba(128,128,128,.3);*/
+  background-color: #C0C0C0;
   color: rgba(0,0,0,.7);
 }
 

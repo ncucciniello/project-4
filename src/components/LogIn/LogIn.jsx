@@ -72,7 +72,7 @@ class LogIn extends Component {
             placeholder="Username"
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password"
           />
           <button
@@ -85,7 +85,7 @@ class LogIn extends Component {
           >Register</button>
           <button
             className="login-button"
-            onClick={()=>{document.querySelector('.login-page').style.display = "none"}}
+            onClick={()=>{document.querySelector('.login-page').style.display = "none", console.log('clicked')}}
           >Log In</button>
 
         </div>
